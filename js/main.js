@@ -80,8 +80,6 @@ async function setup() {
                 // check if won
                 const CURRENT_GUESS = [...UI.WORD.querySelectorAll('char')].map(c => c.textContent).join('')
 
-                console.log('current guess:', CURRENT_GUESS)
-
                 if (CURRENT_GUESS === solution) {
                     // game won
                     gameover = true
